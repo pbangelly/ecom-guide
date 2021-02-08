@@ -19,6 +19,18 @@ module.exports = {
       colors: {
         teal: colors.teal,
         cyan: colors.cyan,
+        transparent: 'transparent',
+        current: 'currentColor',
+        yellow: {
+          light: 'rgb(250, 175, 60)',
+          DEFAULT: 'rgb(250, 175, 60)', // logo-sword-color:
+          dark: 'rgb(250, 175, 60)',
+        },
+        black: {
+          light: '#000',
+          DEFAULT: '#000',
+          dark: '#000',
+        },
       }
     }
   }
