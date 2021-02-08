@@ -10,6 +10,7 @@ import getConfig from '@roxi/routify/lib/utils/config'
 import autoPreprocess from 'svelte-preprocess'
 import postcssImport from 'postcss-import'
 import { injectManifest } from 'rollup-plugin-workbox'
+import image from '@rollup/plugin-image';
 
 
 const { distDir } = getConfig() // use Routify's distDir for SSOT
@@ -68,6 +69,7 @@ export default {
             dedupe: importee => !!importee.match(/svelte(\/|$)/)
         }),
         commonjs(),
+        image(),
 
         production && terser(),
         !production && !isNollup && serve(),
