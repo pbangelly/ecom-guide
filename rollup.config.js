@@ -17,6 +17,7 @@ const assetsDir = 'assets'
 const buildDir = `dist/build`
 const isNollup = !!process.env.NOLLUP
 const production = !process.env.ROLLUP_WATCH;
+process.env.NODE_ENV = production ? "production" : "development";
 
 // clear previous builds
 removeSync(distDir)
@@ -55,7 +56,7 @@ export default {
             hot: isNollup,
             preprocess: [
                 autoPreprocess({
-                    postcss: { plugins: [postcssImport()] },
+                    postcss: require('./postcss.config.js'),
                     defaults: { style: 'postcss' }
                 })
             ]
