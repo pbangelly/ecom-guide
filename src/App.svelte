@@ -23,7 +23,7 @@
   }
 
   a {
-    color: rgb(0, 100, 200);
+    color: rgb(195, 192, 0);
     text-decoration: none;
   }
 
@@ -32,7 +32,7 @@
   }
 
   a:visited {
-    color: rgb(0, 80, 160);
+    color: rgb(255, 255, 255);
   }
 
   label {
