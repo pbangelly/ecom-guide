@@ -2,6 +2,8 @@
   import { metatags } from "@roxi/routify";
   import Footer from "../components/Footer.svelte";
   import ResourceLinks from "../components/ResourceLinks.svelte";
+  import Logo from "../../assets/logo.png"
+  import Author from "../../assets/author.png"
 
   metatags.title = "Cloud Native Entrepreneur";
   metatags.description = "Description coming soon...";
@@ -10,7 +12,7 @@
 <div class="bg-white">
   <div class="relative overflow-hidden">
     <header class="relative">
-      <div class="bg-gray-900 pt-6">
+      <div class="bg-black pt-6">
         <nav
           class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
           aria-label="Global"
@@ -20,16 +22,17 @@
               <a href="#">
                 <span class="sr-only">Workflow</span>
                 <img
+                  id="top-menu-logo"
                   class="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/workflow-mark-teal-200-cyan-400.svg"
+                  src={Logo}
                   alt=""
                 />
               </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <button
                   type="button"
-                  class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
                   id="main-menu"
+                  class="bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
                   aria-haspopup="true"
                 >
                   <span class="sr-only">Open main menu</span>
@@ -86,8 +89,13 @@
               Log in
             </a>
             <a
+              id="nav-form-button"
               href="#"
-              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
+              class="inline-flex items-center px-2 py-2 shadow border border-transparent-50 
+              text-base text-white font-medium 
+              rounded-md bg-gradient-to-r from-yellow-500 to-yellow-800 
+              hover:bg-yellow-400
+              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 focus:ring-offset-yellow-100"
             >
               Start free trial
             </a>
@@ -122,7 +130,7 @@
             <div class="-mr-2">
               <button
                 type="button"
-                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-600"
               >
                 <span class="sr-only">Close menu</span>
                 <!-- Heroicon name: outline/x -->
@@ -175,10 +183,13 @@
                 role="menuitem">Company</a
               >
             </div>
-            <div role="none" class="mt-6 px-5">
+            <div id="header-trail" role="none" class="mt-6 px-5">
               <a
                 href="#"
-                class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700"
+                class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-yellow-400 to-yellow-800 
+                text-white font-medium 
+                hover:from-yellow-600 hover:to-yellow-700 
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 focus:ring-offset-yellow-100"
                 >Start free trial</a
               >
             </div>
@@ -196,7 +207,7 @@
     </header>
     <main>
       <div
-        class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
+        class="pt-10 bg-black sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
       >
         <div class="mx-auto max-w-7xl lg:px-8">
           <div class="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -209,7 +220,7 @@
                   class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                 >
                   <span
-                    class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"
+                    class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-yellow-400 to-yellow-800 rounded-full"
                     >We're hiring</span
                   >
                   <span class="ml-4 text-sm">Visit our careers page</span>
@@ -233,7 +244,7 @@
                 >
                   <span class="block">A better way to</span>
                   <span
-                    class="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block"
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-800 block"
                     >ship web apps</span
                   >
                 </h1>
@@ -258,8 +269,9 @@
                       </div>
                       <div class="mt-3 sm:mt-0 sm:ml-3">
                         <button
+                          id="bottom-form"
                           type="submit"
-                          class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                          class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-yellow-400 to-yellow-800 text-white font-medium hover:from-yellow-600 hover:to-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 focus:ring-offset-yellow-100"
                           >Start free trial</button
                         >
                       </div>
@@ -585,7 +597,7 @@
 
       <!-- Testimonial section -->
       <div
-        class="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative"
+        class="pb-16 bg-gradient-to-r from-yellow-400 to-yellow-800 lg:pb-0 lg:z-10 lg:relative"
       >
         <div
           class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8"
@@ -603,7 +615,7 @@
               >
                 <img
                   class="object-cover lg:h-full lg:w-full"
-                  src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixqx=QWrkbJ5Lr0&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                  src={Author}
                   alt=""
                 />
               </div>
