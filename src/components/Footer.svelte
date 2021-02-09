@@ -187,11 +187,11 @@
                 </a>
               </li>
 
-              <li>
+              <!-- <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Press
                 </a>
-              </li>
+              </li> -->
 
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
@@ -207,11 +207,11 @@
               Legal
             </h3>
             <ul class="mt-4 space-y-4">
-              <li>
+              <!-- <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Claim
                 </a>
-              </li>
+              </li> -->
 
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
@@ -231,7 +231,7 @@
     </div>
     <div class="mt-12 border-t border-gray-200 py-8">
       <p class="text-base text-gray-400 xl:text-center">
-        &copy; 2020 Workflow, Inc. All rights reserved.
+        &copy; 2021 Cloud Native Entrepreneur, Inc. All rights reserved.
       </p>
     </div>
   </div>
