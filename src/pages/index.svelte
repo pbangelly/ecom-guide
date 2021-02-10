@@ -3,7 +3,7 @@
   import Footer from "../components/Footer.svelte";
   import Banner from "../components/Banner.svelte";
   import ResourceLinks from "../components/ResourceLinks.svelte";
-  import MobileNav from "../components/MobileNav.svelte";
+  import Nav from "../components/Nav.svelte";
   import Support from "../components/Support.svelte"
   import Author from "../../assets/author.png";
   import SecondSec from "../components/SecondSec.svelte";
@@ -14,7 +14,7 @@
 
 <div class="bg-white">
   <div class="relative overflow-hidden">
-    <MobileNav />
+    <Nav />
 
     <main>
     
