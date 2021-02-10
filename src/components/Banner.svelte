@@ -1,7 +1,3 @@
-<script>
-  import bannerImg from '../../assets/logo.png';
-</script>
-
 <div class="pt-10 bg-black sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
 <div class="mx-auto max-w-7xl lg:px-8">
   <div class="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -12,6 +8,7 @@
 <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-yellow-400 to-yellow-800 rounded-full"
     >Want to learn more? </span>
 <span class="ml-4 text-sm">Visit our blog </span>
+
 <!-- Heroicon name: solid/chevron-right - make this work-->
 <svg
     class="ml-2 w-5 h-5 text-gray-500"

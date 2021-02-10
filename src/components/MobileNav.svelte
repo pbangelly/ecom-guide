@@ -1,5 +1,18 @@
 <script>
 import Nav from "./Nav.svelte";
+import Logo from "../../assets/logo-big.png"
+
+// actions
+// let ButtonStat = { open: false };
+
+function handleClickClose(MouseEvent) {
+  // let ButtonStat = MouseEvent;
+  // ButtonStat.open = !ButtonStat.open;
+
+  // the default state 
+  // console.log(MouseEvent)
+
+	}
 </script>
 
 <header class="relative">
@@ -18,24 +31,29 @@ import Nav from "./Nav.svelte";
         To: "opacity-0 scale-95"
     -->
 
-    <div
-      class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
-    >
+    <div id="nav-menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden">
       <div
-        class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+        class="rounded-lg shadow-md bg-black ring-1 ring-black ring-opacity-5 overflow-hidden"
       >
         <div class="px-5 pt-4 flex items-center justify-between">
           <div>
             <img
               class="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
+              src={Logo}
               alt=""
             />
           </div>
-          <div class="-mr-2">
+
+         <!-- 
+          close menu button
+          set state to hidden, until clicked
+          button to view menu on click open - toggle hide & open menu
+        --> 
+          <div id="close-button" class="-mr-2">
             <button
               type="button"
-              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-600"
+              on:click={handleClickClose}
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-600"
             >
               <span class="sr-only">Close menu</span>
               <!-- Heroicon name: outline/x -->
@@ -57,7 +75,10 @@ import Nav from "./Nav.svelte";
             </button>
           </div>
         </div>
+
+        <!-- Mobile menu options -->
         <div
+          id="mob-menu-options"
           class="pt-5 pb-6"
           role="menu"
           aria-orientation="vertical"
@@ -66,28 +87,30 @@ import Nav from "./Nav.svelte";
           <div class="px-2 space-y-1" role="none">
             <a
               href="#"
-              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
               role="menuitem">Product</a
             >
 
             <a
               href="#"
-              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
               role="menuitem">Features</a
             >
 
             <a
               href="#"
-              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
               role="menuitem">Marketplace</a
             >
 
             <a
               href="#"
-              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
               role="menuitem">Candy</a
             >
           </div>
+
+          <!-- free trail button-->
           <div id="header-trail" role="none" class="mt-6 px-5">
             <a
               href="#"
@@ -97,12 +120,14 @@ import Nav from "./Nav.svelte";
               focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 focus:ring-offset-yellow-100"
               >Start free trial</a
             >
-          </div>
-          <div role="none" class="mt-6 px-5">
-            <p class="text-center text-base font-medium text-gray-500">
+          </div
+          >
+          <!-- login -->
+          <div id="login-moblink" role="none" class="mt-6 px-5">
+            <p class="text-center text-base font-medium text-red-500">
               Existing customer? <a
                 href="#"
-                class="text-gray-900 hover:underline">Login</a
+                class="text-white hover:underline">Login</a
               >
             </p>
           </div>
