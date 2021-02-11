@@ -17,7 +17,7 @@
   </div>
   <div class="flex-1 bg-white p-6 flex flex-col justify-between">
     <div class="flex-1">
-      <p class="text-sm font-medium text-cyan-600">
+      <p class="text-sm font-medium text-yellow">
         <a href="#" class="hover:underline"> {type} </a>
       </p>
       <a href="#" class="block mt-2">

@@ -1,12 +1,16 @@
+<script>
+    import { slide } from 'svelte/transition';
+</script>
+
 <div class="pt-10 bg-black sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
 <div class="mx-auto max-w-7xl lg:px-8">
   <div class="lg:grid lg:grid-cols-2 lg:gap-8">
     <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
       <div class="lg:py-24">
-<!-- replace with blog link -->
-        <a href="/" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
+        <a href="/about" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 
+        sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
 <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-yellow-400 to-yellow-800 rounded-full"
-    >Want to learn more? </span>
+>Want to learn more? </span>
 <span class="ml-4 text-sm">Visit our blog </span>
 
 <!-- Heroicon name: solid/chevron-right - make this work-->
