@@ -1,4 +1,4 @@
-<footer class="bg-gray-50" aria-labelledby="footerHeading">
+<footer class="bg-black" aria-labelledby="footerHeading">
   <h2 id="footerHeading" class="sr-only">Footer</h2>
   <div
     class="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8"
@@ -10,7 +10,7 @@
           src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
           alt="Company name"
         />
-        <p class="text-gray-500 text-base">
+        <p class="text-gray-300 text-base">
           Making the world a better place through constructing elegant
           hierarchies.
         </p>
@@ -231,7 +231,7 @@
     </div>
     <div class="mt-12 border-t border-gray-200 py-8">
       <p class="text-base text-gray-400 xl:text-center">
-        &copy; 2021 Cloud Native Entrepreneur, Inc. All rights reserved.
+        &copy; 2021 Hack The Ratio, Inc. All rights reserved.
       </p>
     </div>
   </div>

@@ -3,7 +3,7 @@
   import Footer from "../components/Footer.svelte";
   import Banner from "../components/Banner.svelte";
   import ResourceLinks from "../components/ResourceLinks.svelte";
-  import Nav from "../components/Nav.svelte";
+  // import Nav from "../components/Nav.svelte";
   import Support from "../components/Support.svelte"
   import Author from "../../assets/author.png";
   import SecondSec from "../components/SecondSec.svelte";
@@ -14,7 +14,7 @@
 
 <div class="bg-white">
   <div class="relative overflow-hidden">
-    <Nav />
+    <!-- <Nav /> -->
 
     <main>
     
@@ -29,7 +29,7 @@
           class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
         >
           <h2
-            class="text-base font-semibold tracking-wider text-yellow uppercase"
+            class="text-base font-semibold tracking-wider text-teal-500 uppercase"
           >
             Deploy faster
           </h2>
@@ -50,7 +50,7 @@
                   <div class="-mt-6">
                     <div>
                       <span
-                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md shadow-lg"
+                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
                       >
                         <!-- Heroicon name: outline/cloud-upload -->
                         <svg
@@ -88,7 +88,7 @@
                   <div class="-mt-6">
                     <div>
                       <span
-                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md shadow-lg"
+                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
                       >
                         <!-- Heroicon name: outline/lock-closed -->
                         <svg
@@ -126,7 +126,7 @@
                   <div class="-mt-6">
                     <div>
                       <span
-                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md shadow-lg"
+                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
                       >
                         <!-- Heroicon name: outline/refresh -->
                         <svg
@@ -164,7 +164,7 @@
                   <div class="-mt-6">
                     <div>
                       <span
-                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md shadow-lg"
+                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
                       >
                         <!-- Heroicon name: outline/shield-check -->
                         <svg
@@ -202,7 +202,7 @@
                   <div class="-mt-6">
                     <div>
                       <span
-                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md shadow-lg"
+                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
                       >
                         <!-- Heroicon name: outline/cog -->
                         <svg
@@ -246,7 +246,7 @@
                   <div class="-mt-6">
                     <div>
                       <span
-                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md shadow-lg"
+                        class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
                       >
                         <!-- Heroicon name: outline/server -->
                         <svg
@@ -285,7 +285,7 @@
 
       <!-- Testimonial section -->
       <div
-        class="pb-16 bg-gradient-to-r from-yellow-400 to-yellow-800 lg:pb-0 lg:z-10 lg:relative"
+        class="pb-16 bg-gradient-to-r from-teal-400 to-teal-800 lg:pb-0 lg:z-10 lg:relative"
       >
         <div
           class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8"

@@ -5,7 +5,7 @@
   >
     <div>
       <h2
-        class="text-base font-semibold tracking-wider text-yellow uppercase"
+        class="text-base font-semibold tracking-wider text-teal-500 uppercase"
       >
         Serverless
       </h2>

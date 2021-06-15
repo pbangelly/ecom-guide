@@ -1,6 +1,6 @@
 <script>
   import BigLogo from "../../assets/logo-big.png";
-  import Logo from "../../assets/logo.png";
+  // import Logo from "../../assets/logo.png";
 
   let showMenu = false;
 
@@ -34,12 +34,12 @@
         <div class="flex items-center justify-between w-full md:w-auto">
           <a href="#">
             <span class="sr-only">Workflow</span>
-            <img
+            <!-- <img
               id="top-menu-logo"
               class="h-8 w-auto sm:h-10"
-              src={Logo}
+              src={BigLogo}
               alt=""
-            />
+            /> -->
           </a>
           <div class="-mr-2 flex items-center md:hidden">
             <button
@@ -96,9 +96,9 @@
           href="#"
           class="inline-flex items-center px-2 py-2 shadow border border-transparent-50 
             text-base text-white font-medium 
-            rounded-md bg-gradient-to-r from-yellow-500 to-yellow-800 
-            hover:bg-yellow-400
-            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 focus:ring-offset-yellow-100"
+            rounded-md bg-gradient-to-r from-teal-500 to-teal-800 
+            hover:bg-teal-400
+            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-teal-100"
         >
           Start free trial
         </a>
@@ -128,9 +128,9 @@
       class="rounded-lg shadow-md bg-black ring-1 ring-black ring-opacity-5 overflow-hidden"
     >
       <div class="px-5 pt-4 flex items-center justify-between">
-        <div>
+        <!-- <div>
           <img class="h-8 w-auto" src={BigLogo} alt="cloud native logo" />
-        </div>
+        </div> -->
         <!-- 
           close menu button
           set state to hidden, until clicked
