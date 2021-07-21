@@ -11,11 +11,11 @@
     showMenu = ! showMenu;
   }
 
-  // function handleClickOpen(event) {
-  //   // on click show drop down menu
-  //   console.log('open');
-  //   showMenu = true;
-  // }
+  function handleClickOpen(event) {
+    // on click show drop down menu
+    console.log('open');
+    showMenu = true;
+  }
 </script>
 
 <style>
@@ -71,11 +71,11 @@
         </div>
         <div class="hidden space-x-8 md:flex md:ml-10">
           <a href="#" class="text-base font-medium text-white hover:text-gray-300"
-            >Help here</a
+            >Blog</a
           >
   
           <a href="#" class="text-base font-medium text-white hover:text-gray-300"
-            >Features</a
+            >Services</a
           >
   
           <a href="#" class="text-base font-medium text-white hover:text-gray-300"
@@ -83,7 +83,7 @@
           >
   
           <a href="#" class="text-base font-medium text-white hover:text-gray-300"
-            >Company</a
+            >Contact</a
           >
         </div>
       </div>
@@ -128,9 +128,9 @@
       class="rounded-lg shadow-md bg-black ring-1 ring-black ring-opacity-5 overflow-hidden"
     >
       <div class="px-5 pt-4 flex items-center justify-between">
-        <!-- <div>
+        <div>
           <img class="h-8 w-auto" src={BigLogo} alt="cloud native logo" />
-        </div> -->
+        </div>
         <!-- 
           close menu button
           set state to hidden, until clicked
@@ -176,25 +176,25 @@
           <a
             href="#"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
-            role="menuitem">Product</a
+            role="menuitem">Blog</a
           >
 
           <a
             href="#"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
-            role="menuitem">Features</a
+            role="menuitem">Services</a
           >
 
           <a
             href="#"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
-            role="menuitem">Marketplace</a
+            role="menuitem">Market Place</a
           >
 
           <a
             href="#"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
-            role="menuitem">Candy</a
+            role="menuitem">Contact</a
           >
         </div>
 
@@ -202,16 +202,16 @@
         <div id="header-trail" role="none" class="mt-6 px-5">
           <a
             href="#"
-            class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-yellow-400 to-yellow-800 
+            class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-400 to-teal-800 
               text-white font-medium 
-              hover:from-yellow-600 hover:to-yellow-700 
-              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 focus:ring-offset-yellow-100"
+              hover:from-teal-600 hover:to-teal-700 
+              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-teal-100"
             >Start free trial</a
           >
         </div>
         <!-- login -->
         <div id="login-moblink" role="none" class="mt-6 px-5">
-          <p class="text-center text-base font-medium text-red-500">
+          <p class="text-center text-base font-medium text-yellow-500">
             Existing customer? <a href="#" class="text-white hover:underline"
               >Login</a
             >

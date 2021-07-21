@@ -31,16 +31,15 @@
 >
   <span class="block">A better way to</span>
   <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-800 block"
-    >ship web apps</span
+    >Build on the web</span
   >
 </h1>
 <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-  qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam
-  occaecat fugiat.
+  We make it our goal to stay on top of the lastest trends that will help our clients grow their business.
+  <!-- Subscribe below if you would like to know when we find tech tools that will help your business. -->
 </p>
 <div class="mt-10 sm:mt-12">
-  <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
+  <form action="https://hacktheratio.us1.list-manage.com/subscribe/post?u=5df561687a006776cdd704251&amp;id=d97c0df336" class="sm:max-w-xl sm:mx-auto lg:mx-0">
     <div class="sm:flex">
     <div class="min-w-0 flex-1">
 <label for="email" class="sr-only">Email address</label>
@@ -61,7 +60,8 @@
     </div>
     </div>
     <p class="mt-3 text-sm text-gray-300 sm:mt-4">
-    Signup today by providing your email, you agree to our <a href="/" class="font-medium text-white">terms or service</a>.
+    Signup today by providing your email, you agree to our 
+    <a href="*|EMAIL|*" class="font-medium text-white"> terms or service</a>.
     </p>
   </form>
 </div>
