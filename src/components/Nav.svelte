@@ -1,6 +1,6 @@
 <script>
-  import BigLogo from "../../assets/logo-big.png";
-  // import Logo from "../../assets/logo.png";
+  // import BigLogo from "../../assets/logo-big.png";
+  import Logo from "../../assets/images/touch-icons/htrlogo.png";
 
   let showMenu = false;
 
@@ -37,7 +37,7 @@
             <!-- <img
               id="top-menu-logo"
               class="h-8 w-auto sm:h-10"
-              src={BigLogo}
+              src={Logo}
               alt=""
             /> -->
           </a>
@@ -129,7 +129,7 @@
     >
       <div class="px-5 pt-4 flex items-center justify-between">
         <div>
-          <img class="h-8 w-auto" src={BigLogo} alt="cloud native logo" />
+          <img class="h-8 w-auto" src={Logo} alt="cloud native logo" />
         </div>
         <!-- 
           close menu button

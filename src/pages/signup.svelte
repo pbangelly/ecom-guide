@@ -1,9 +1,22 @@
 <script>
     import Nav from '../components/Nav.svelte'
+    import Logo from '../../assets/images/touch-icons/htrlogo.png'
+    // let userObject = null;
+    // const userbase = window.userbase;
+    // let authPromise = userbase.init({appId:'9e7c8687-652a-42c2-b400-883d708e94ea'})
+    // .then(({user}) => userObject = user)
+
+    let username, password; 
+    // const cancelSignUp = ('canceling sign in')
+    // const signUp = () => authPromise =  userbase.signUp({username, password}).then(user => userObject = user);
+
+    const signUp = () => console.log('signed up')
+    const cancelSignUp = () => console.log('signup canceled')
 </script>
-<div class="bg-black mx-auto md:p-20">
+
 <Nav/>
-    <!--
+
+<!--
   This example requires Tailwind CSS v2.0+ 
   
   This example requires some changes to your config:
@@ -19,182 +32,60 @@
   }
   ```
 -->
-<form class="bg-black space-y-8 divide-y divide-gray-200">
-    <div class="space-y-8 divide-y divide-gray-100 m-10 pb-10">
+<div class="min-h-screen flex items-center justify-center bg-black py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
+    <div>
+      <!-- <img class="mx-auto h-1/4 w-auto" src={Logo} alt="Workflow"> -->
+      <img class="mx-auto m-5 h-20 md:h-40 max-w-auto" src={Logo} alt="Workflow">
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-teal-500">
+        Create your account
+      </h2>
+      <!-- <p class="mt-2 text-center text-sm text-gray-600">
+        Or
+        <a href="#" class="font-medium text-teal-600 hover:text-teal-500">
+          start your 14-day free trial
+        </a>
+      </p> -->
+    </div>
+    <form class="mt-8 space-y-6" action="#" method="POST">
+      <input type="hidden" name="remember" value="true">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm" placeholder="Email address">
+        </div>
+        <div>
+          <label for="password" class="sr-only">Create Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm" placeholder="Create Password">
+        </div>
+      </div>
+
+      <!-- <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
+          <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+            Remember me
+          </label>
+        </div>
+
+        <div class="text-sm">
+          <a href="#" class="font-medium text-teal-600 hover:text-teal-500">
+            Forgot your password?
+          </a>
+        </div>
+      </div> -->
+
       <div>
-        <div>
-          <h3 class="text-lg leading-6 font-medium text-gray-100 pt-10">
-            Profile
-          </h3>
-          <!-- <p class="mt-1 text-sm text-gray-500">
-            This information will be displayed publicly so be careful what you share.
-          </p> -->
-        </div>
-  
-        <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-          <div class="sm:col-span-4">
-            <label for="username" class="block text-sm font-medium text-white">
-              Username
-            </label>
-            <div class="mt-1 flex rounded-md shadow-sm">
-              <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-teal-500 sm:text-sm">
-                hacktheratio.com/
-              </span>
-              <input type="text" name="username" id="username" autocomplete="username" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-6">
-            <label for="about" class="block text-sm font-medium text-white">
-              About
-            </label>
-            <div class="mt-1">
-              <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"></textarea>
-            </div>
-            <p class="mt-2 text-sm text-gray-500">Write a few sentences about yourself.</p>
-          </div>
-  
-          <div class="sm:col-span-6">
-            <label for="photo" class="block text-sm font-medium text-gray-100">
-              Photo
-            </label>
-            <div class="mt-1 flex items-center">
-              <span class="h-12 w-12 rounded-full overflow-hidden bg-gray-100">
-                <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </span>
-              <button type="button" class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-teal-700 hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Change
-              </button>
-            </div>
-          </div>
-  
-          <div class="sm:col-span-6">
-            <label for="cover-photo" class="block text-sm font-medium text-gray-100">
-              Cover photo
-            </label>
-            
-            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-100 border-dashed rounded-md">
-              <div class="space-y-1 text-center">
-                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                  <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <p class="pl-1 text-gray-400">or drag and drop</p>
-                <div class="flex text-sm text-gray-300">
-                  <label for="file-upload" class="relative p-10 cursor-pointer bg-white rounded-md font-medium text-teal-600 hover:text-teal-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-teal-500">
-                    <span>Upload a file</span>
-                    <input id="file-upload" name="file-upload" type="file" class="sr-only">
-                  </label>
-                  <!-- <p class="pl-1">or drag and drop</p> -->
-                </div>
-                <p class="text-xs text-gray-400">
-                  PNG, JPG, GIF up to 10MB
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="pt-8">
-        <div>
-          <h3 class="text-lg leading-6 font-medium text-teal-500">
-            Personal Information
-          </h3>
-          <p class="mt-1 text-sm text-gray-400">
-            Use a permanent address where you can receive mail.
-          </p>
-        </div>
-        <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-          <div class="sm:col-span-3">
-            <label for="first-name" class="block text-sm font-medium text-gray-400">
-              First name
-            </label>
-            <div class="mt-1">
-              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-3">
-            <label for="last-name" class="block text-sm font-medium text-gray-400">
-              Last name
-            </label>
-            <div class="mt-1">
-              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-4">
-            <label for="email" class="block text-sm font-medium text-gray-400">
-              Email address
-            </label>
-            <div class="mt-1">
-              <input id="email" name="email" type="email" autocomplete="email" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-3">
-            <label for="country" class="block text-sm font-medium text-gray-400">
-              Country / Region
-            </label>
-            <div class="mt-1">
-              <select id="country" name="country" autocomplete="country" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-                <option>United States</option>
-                <option>Canada</option>
-                <option>Mexico</option>
-              </select>
-            </div>
-          </div>
-  
-          <div class="sm:col-span-6">
-            <label for="street-address" class="block text-sm font-medium text-gray-400">
-              Street address
-            </label>
-            <div class="mt-1">
-              <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-2">
-            <label for="city" class="block text-sm font-medium text-gray-400">
-              City
-            </label>
-            <div class="mt-1">
-              <input type="text" name="city" id="city" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-2">
-            <label for="state" class="block text-sm font-medium text-gray-400">
-              State / Province
-            </label>
-            <div class="mt-1">
-              <input type="text" name="state" id="state" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-  
-          <div class="sm:col-span-2">
-            <label for="zip" class="block text-sm font-medium text-gray-400">
-              ZIP / Postal
-            </label>
-            <div class="mt-1">
-              <input type="text" name="zip" id="zip" autocomplete="postal-code" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="pt-5 p-10">
-      <div class="flex justify-end">
-        <button type="button" class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-teal-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          Cancel
-        </button>
-        <button type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-700 hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          Save
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <!-- Heroicon name: solid/lock-closed -->
+            <svg class="h-5 w-5 text-teal-500 group-hover:text-teal-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          Sign in
         </button>
       </div>
-    </div>
-  </form>  
+    </form>
+  </div>
 </div>

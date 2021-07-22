@@ -15,6 +15,9 @@ module.exports = {
     content: ["./src/**/*.svelte"],
     enabled: production,
   },
+  objectPosition: {
+    center: 'center'
+  },
   theme: {
     extend: {
       colors: {
@@ -31,6 +34,11 @@ module.exports = {
           light: '#000',
           DEFAULT: '#000',
           dark: '#000',
+        },
+        maxWidth: {
+          '1/4': '25%',
+          '1/2': '50%',
+          '3/4': '75%',
         },
       }
     }
