@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="hidden md:flex md:items-center md:space-x-6">
-        <a href="/members" class="text-base font-medium text-white hover:text-gray-300">
+        <a href="/login" class="text-base font-medium text-white hover:text-gray-300">
           Log in
         </a>
         <a
@@ -212,7 +212,7 @@
         <!-- login -->
         <div id="login-moblink" role="none" class="mt-6 px-5">
           <p class="text-center text-base font-medium text-yellow-500">
-            Existing customer? <a href="/members" class="text-white hover:underline"
+            Existing customer? <a href="/login" class="text-white hover:underline"
               >Login</a
             >
           </p>

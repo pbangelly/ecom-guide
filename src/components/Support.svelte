@@ -41,12 +41,12 @@
               <div class="inline-flex rounded-md shadow">
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                  class="bg-teal-600 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-500"
                 >
                   Visit the help center
                   <!-- Heroicon name: solid/external-link -->
                   <svg
-                    class="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                    class="-mr-1 ml-3 h-5 w-5 text-gray-200"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
