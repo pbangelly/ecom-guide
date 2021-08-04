@@ -1,19 +1,20 @@
 <script>
   // import BigLogo from "../../assets/logo-big.png";
   import Logo from "../../assets/images/touch-icons/htrlogo.png";
+  import Link from "svelte-link";
 
   let showMenu = false;
 
   // actions
 
   // default close on all screens - only display icon
-  function handleClickToggle(event) {
+  function handleClickToggle(_event) {
     showMenu = ! showMenu;
   }
 
-  function handleClickOpen(event) {
+  function handleClickOpen(_event) {
     // on click show drop down menu
-    console.log('open');
+    // console.log('open');
     showMenu = true;
   }
 </script>
@@ -32,14 +33,14 @@
     >
       <div class="flex items-center flex-1">
         <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="#">
+          <a href="/">
             <span class="sr-only">Workflow</span>
-            <!-- <img
+            <img
               id="top-menu-logo"
               class="h-8 w-auto sm:h-10"
               src={Logo}
               alt=""
-            /> -->
+            />
           </a>
           <div class="-mr-2 flex items-center md:hidden">
             <button
@@ -70,28 +71,29 @@
           </div>
         </div>
         <div class="hidden space-x-8 md:flex md:ml-10">
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300"
+          <a href="/" class="text-base font-medium text-white hover:text-gray-300"
+            >Home</a
+          >
+  
+          <a href="/blog" class="text-base font-medium text-white hover:text-gray-300"
             >Blog</a
           >
-  
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300"
-            >Services</a
-          >
-  
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300"
+
+          <a href="/market" class="text-base font-medium text-white hover:text-gray-300"
             >Marketplace</a
           >
   
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300"
-            >Contact</a
+          <a href="/services" class="text-base font-medium text-white hover:text-gray-300"
+            >Services</a
           >
         </div>
       </div>
       <div class="hidden md:flex md:items-center md:space-x-6">
-        <a href="/login" class="text-base font-medium text-white hover:text-gray-300">
+        <!-- <a href="/login" class="text-base font-medium text-white hover:text-gray-300">
           Log in
-        </a>
-        <a
+        </a> -->
+        <Link href='https://hacktheratio-memebers.netlify.app/#/signin' class="text-base font-medium text-white hover:text-gray-300" outbound>Login</Link>
+        <!-- <a
           id="nav-form-button"
           href="/signup"
           class="inline-flex items-center px-2 py-2 shadow border border-transparent-50 
@@ -101,7 +103,13 @@
             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-teal-100"
         >
           Signup
-        </a>
+        </a> -->
+        <Link href='https://hacktheratio-memebers.netlify.app/'
+        class="inline-flex items-center px-2 py-2 shadow border border-transparent-50 
+        text-base text-white font-medium 
+        rounded-md bg-gradient-to-r from-teal-500 to-teal-800 
+        hover:bg-teal-400
+        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-teal-100" outbound>Sign up</Link>
       </div>
     </nav>
   </div>
@@ -121,7 +129,7 @@
 
   <div
     id="nav-menu"
-    class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden {showMenu ? 'duration-150 ease-out opacity-100 scale-100' : 'duration-100 ease-in opacity-0 scale-95'}"
+    class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden {showMenu ? 'duration-150 ease-out opacity-100 scale-100 visible' : 'duration-100 ease-in opacity-0 scale-95 invisible'}"
   >
     <div
       id="nav-menu-content"
@@ -174,34 +182,34 @@
       >
         <div class="px-2 space-y-1" role="none">
           <a
-            href="#"
+            href="/"
+            class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
+            role="menuitem">Home</a
+          >
+
+          <a
+            href="/blog"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
             role="menuitem">Blog</a
           >
 
           <a
-            href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
-            role="menuitem">Services</a
-          >
-
-          <a
-            href="#"
+            href="/market"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
             role="menuitem">Market Place</a
           >
 
           <a
-            href="#"
+            href="/services"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-red-50"
-            role="menuitem">Contact</a
+            role="menuitem">Services</a
           >
         </div>
 
         <!-- free trail button-->
         <div id="header-trail" role="none" class="mt-6 px-5">
           <a
-            href="/signup"
+            href="hacktheratio-memebers.netlify.app"
             class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-400 to-teal-800 
               text-white font-medium 
               hover:from-teal-600 hover:to-teal-700 
@@ -212,7 +220,7 @@
         <!-- login -->
         <div id="login-moblink" role="none" class="mt-6 px-5">
           <p class="text-center text-base font-medium text-yellow-500">
-            Existing customer? <a href="/login" class="text-white hover:underline"
+            Existing customer? <a href="hacktheratio-memebers.netlify.app" class="text-white hover:underline"
               >Login</a
             >
           </p>

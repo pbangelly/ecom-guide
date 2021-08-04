@@ -1,37 +1,10 @@
 <script>
     import Nav from '../components/Nav.svelte'
     import Logo from '../../assets/images/touch-icons/htrlogo.png'
-    // let userObject = null;
-    // const userbase = window.userbase;
-    // let authPromise = userbase.init({appId:'9e7c8687-652a-42c2-b400-883d708e94ea'})
-    // .then(({user}) => userObject = user)
-
-    let username, password; 
-    // const cancelSignUp = ('canceling sign in')
-    // const signUp = () => authPromise =  userbase.signUp({username, password}).then(user => userObject = user);
-
-    const signUp = () => console.log('signed up')
-    const cancelSignUp = () => console.log('signup canceled')
 </script>
 
 <Nav/>
 
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ]
-  }
-  ```
--->
 <div class="min-h-screen flex items-center justify-center bg-black py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full space-y-8">
     <div>

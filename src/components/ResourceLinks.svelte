@@ -1,4 +1,4 @@
-<script>
+<script id="blog">
   import ResourceLink from "./ResourceLink.svelte";
 
   let resources = [

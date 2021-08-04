@@ -1,30 +1,32 @@
+<script>
+  import MainImage from '../../assets/images/mockup.png';
+</script>
+
 <!-- Feature    section with screenshot -->
 <div class="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
   <div
     class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl"
   >
     <div>
-      <h2
+      <!-- <h2
         class="text-base font-semibold tracking-wider text-teal-500 uppercase"
       >
         Serverless
-      </h2>
+      </h2> -->
       <p
         class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
       >
-        No server? No problem.
+        No Tech Experince? <br/> No problem.
       </p>
       <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-        Phasellus lorem quam molestie id quisque diam aenean nulla in.
-        Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-        condimentum id viverra nulla.
+        We build business systems online from start to finish using powerful and modern tech tools that aligns with your customers and business goals.
       </p>
     </div>
-    <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
+    <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-20">
       <img
-        class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-        src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg"
-        alt=""
+        class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 object-contain"
+        src={MainImage}
+        alt="mockup"
       />
     </div>
   </div>
