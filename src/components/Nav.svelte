@@ -209,7 +209,7 @@
         <!-- free trail button-->
         <div id="header-trail" role="none" class="mt-6 px-5">
           <a
-            href="hacktheratio-memebers.netlify.app"
+            href="https://hacktheratio-memebers.netlify.app"
             class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-400 to-teal-800 
               text-white font-medium 
               hover:from-teal-600 hover:to-teal-700 
@@ -220,7 +220,7 @@
         <!-- login -->
         <div id="login-moblink" role="none" class="mt-6 px-5">
           <p class="text-center text-base font-medium text-yellow-500">
-            Existing customer? <a href="hacktheratio-memebers.netlify.app" class="text-white hover:underline"
+            Existing customer? <a href="https://hacktheratio-memebers.netlify.app/#/signin" class="text-white hover:underline"
               >Login</a
             >
           </p>
