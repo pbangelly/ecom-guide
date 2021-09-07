@@ -7,7 +7,7 @@
   import Support from "../components/Support.svelte"
   // import Author from "../../assets/author.png";
   import SecondSec from "../components/SecondSec.svelte";
-  import Testimony from "../components/testimony.svelte";
+  // import Testimony from "../components/Testimony.svelte";
 
   metatags.title = "Hack The Ratio";
   metatags.description = "Description coming soon...";
@@ -32,7 +32,7 @@
           <h2
             class="text-base font-semibold tracking-wider text-teal-500 uppercase"
           >
-            Launch faster
+            🚀 Launch Faster
           </h2>
           <p
             class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
@@ -40,9 +40,7 @@
             Everything you need to put your business on the web
           </p>
           <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in.
-            Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-            condimentum id viverra nulla.
+            We offer services from digital marketing to tech services.
           </p>
           <div class="mt-12">
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -74,11 +72,10 @@
                     <h3
                       class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                     >
-                      Push to Deploy
+                    Business Systems setup
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Domain/SSL, Online Business Management, Setup Business Email, Social Media Integration, Analytics integrations, and more.
                     </p>
                   </div>
                 </div>
@@ -112,11 +109,10 @@
                     <h3
                       class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                     >
-                      SSL Certificates
+                    Development
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Websites, Blogs, eCommerce, Funnels, and Landing pages are built with modern tools for fast responsive sites and integrated with analytics tools for observability.
                     </p>
                   </div>
                 </div>
@@ -150,25 +146,24 @@
                     <h3
                       class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                     >
-                      Simple Queues
+                    Markeing and Data
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Start, grow and maintain a relationship with your customers by knowing them. It all starts with data.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
+              <!-- <div class="pt-6">
                 <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                   <div class="-mt-6">
                     <div>
                       <span
                         class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
-                      >
+                      > -->
                         <!-- Heroicon name: outline/shield-check -->
-                        <svg
+                        <!-- <svg
                           class="h-6 w-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -191,22 +186,21 @@
                       Advanced Security
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      We used cludflare to serve and manage our domains
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="pt-6">
+              <!-- <div class="pt-6">
                 <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                   <div class="-mt-6">
                     <div>
                       <span
                         class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
-                      >
+                      > -->
                         <!-- Heroicon name: outline/cog -->
-                        <svg
+                        <!-- <svg
                           class="h-6 w-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -228,8 +222,8 @@
                           />
                         </svg>
                       </span>
-                    </div>
-                    <h3
+                    </div> -->
+                    <!-- <h3
                       class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                     >
                       Powerful API
@@ -240,17 +234,17 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="pt-6">
+              <!-- <div class="pt-6">
                 <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                   <div class="-mt-6">
                     <div>
                       <span
                         class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-400 to-teal-600 rounded-md shadow-lg"
-                      >
+                      > -->
                         <!-- Heroicon name: outline/server -->
-                        <svg
+                        <!-- <svg
                           class="h-6 w-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -264,9 +258,9 @@
                             stroke-width="2"
                             d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
                           />
-                        </svg>
-                      </span>
-                    </div>
+                        </svg> 
+                      </span> -->
+                    <!-- </div>
                     <h3
                       class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                     >
@@ -276,16 +270,16 @@
                       Ac tincidunt sapien vehicula erat auctor pellentesque
                       rhoncus. Et magna sit morbi lobortis.
                     </p>
-                  </div>
-                </div>
-              </div>
+                  </div> -->
+                <!-- </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
       </div>
 
     <!-- Testimonial section -->
-    <Testimony/>
+    <!-- <Testimony/> -->
 
     <!-- Blog section -->
     <ResourceLinks />

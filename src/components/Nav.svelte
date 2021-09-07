@@ -26,15 +26,15 @@
 </style>
 
 <header class="relative">
-  <div class="bg-black pt-6">
+  <div class="bg-black pt-6 pb-6">
     <nav
       class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
       aria-label="Global"
     >
       <div class="flex items-center flex-1">
         <div class="flex items-center justify-between w-full md:w-auto">
+          <span class="sr-only">Return Home</span>
           <a href="/">
-            <span class="sr-only">Workflow</span>
             <img
               id="top-menu-logo"
               class="h-8 w-auto sm:h-10"
@@ -137,7 +137,9 @@
     >
       <div class="px-5 pt-4 flex items-center justify-between">
         <div>
-          <img class="h-8 w-auto" src={Logo} alt="cloud native logo" />
+          <a href="/">
+            <img class="h-8 w-auto" src={Logo} alt="cloud native logo" />
+          </a>
         </div>
         <!-- 
           close menu button

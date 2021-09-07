@@ -1,6 +1,5 @@
 <script>
-
-import { page } from "@roxi/routify/runtime/helpers";
+// import { page } from "@roxi/routify/runtime/helpers";
 
 </script>
 <div> 
