@@ -1,6 +1,6 @@
 <script>
   // import BigLogo from "../../assets/logo-big.png";
-  import Logo from "../../assets/images/touch-icons/htrlogo.png";
+  import Logo from "../../assets/images/icons/htrlogo.png";
   import Link from "svelte-link";
 
   let showMenu = false;
@@ -70,7 +70,7 @@
             </button>
           </div>
         </div>
-        <div class="hidden space-x-8 md:flex md:ml-10">
+        <!-- <div class="hidden space-x-8 md:flex md:ml-10">
           <a href="/" class="text-base font-medium text-white hover:text-gray-300"
             >Home</a
           >
@@ -86,7 +86,7 @@
           <a href="/services" class="text-base font-medium text-white hover:text-gray-300"
             >Services</a
           >
-        </div>
+        </div> -->
       </div>
       <div class="hidden md:flex md:items-center md:space-x-6">
         <!-- <a href="/login" class="text-base font-medium text-white hover:text-gray-300">

@@ -13,7 +13,6 @@
 >Want to learn more? </span>
 <span class="ml-4 text-sm">Visit our blog </span> -->
 
-<!-- Heroicon name: solid/chevron-right - make this work-->
 <!-- <svg
     class="ml-2 w-5 h-5 text-gray-500"
     xmlns="http://www.w3.org/2000/svg"
@@ -28,15 +27,19 @@
   </svg>
 </a> -->
 <h1
-  class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+  class="mt-4 text-6xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
 >
-  <span class="block">A better way to</span>
+  <span class="block">Building The Road</span>
   <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-800 block"
-    >Build on the web</span
+    >You need to get ahead 🚀</span
   >
 </h1>
-<p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-  We make it our goal to stay on top of the lastest trends that will help our clients grow their business.
+<p class="mt-3 text-sm text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+  Hack The Ratio's is a Business Development Service Agency.
+  We offer a tailored selection of professional consulting services that are completely customizable for your business.
+  Whatever your needs may be, we can make it happen.
+  Get in touch with us today.
+  <!-- We make it our goal to stay on top of the lastest trends that will help our clients grow their business. -->
   <!-- Subscribe below if you would like to know when we find tech tools that will help your business. -->
 </p>
 <div class="mt-10 sm:mt-12">
@@ -60,10 +63,10 @@
   </button>
     </div>
     </div>
-    <p class="mt-3 text-sm text-gray-300 sm:mt-4">
-    Signup today by providing your email, you agree to our 
+    <!-- <p class="mt-3 text-sm text-gray-300 sm:mt-4">
+    Signup today by providing your email
     <a href="*|EMAIL|*" class="font-medium text-white"> terms or service</a>.
-    </p>
+    </p> -->
   </form>
 </div>
     </div>

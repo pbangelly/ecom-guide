@@ -1,6 +1,6 @@
 <script>
     import Nav from '../components/Nav.svelte'
-    import Logo from '../../assets/images/touch-icons/htrlogo.png'
+    import Logo from '../../assets/images/icons/htrlogo.png'
 </script>
 
 <Nav/>

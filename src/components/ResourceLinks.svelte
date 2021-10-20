@@ -75,4 +75,5 @@
       {/each}
     </div>
   </div>
+  <button class="m-5 p-2 rounded-md bg-teal-600 text-white w-auto">View All</button>
 </div>

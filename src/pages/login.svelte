@@ -1,5 +1,5 @@
 <script>
-  import Logo from '../../assets/images/touch-icons/htrlogo.png';
+  import Logo from '../../assets/images/icons/htrlogo.png';
   import Nav from '../components/Nav.svelte'
 // import About from './about.svelte';
     // let userObject = null;

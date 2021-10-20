@@ -17,7 +17,7 @@
   </div>
   <div class="flex-1 bg-white p-6 flex flex-col justify-between">
     <div class="flex-1">
-      <p class="text-sm font-medium text-yellow">
+      <p class="text-sm font-medium text-teal-500">
         <a href="#" class="hover:underline"> {type} </a>
       </p>
       <a href="#" class="block mt-2">
@@ -40,6 +40,7 @@
           />
         </a>
       </div>
+
       <div class="ml-3">
         <p class="text-sm font-medium text-gray-900">
           <a href="#" class="hover:underline"> {author} </a>
@@ -51,5 +52,6 @@
         </div>
       </div>
     </div>
+    <button class="m-5 rounded-md bg-teal-600 text-white">Learn More</button>
   </div>
 </div>

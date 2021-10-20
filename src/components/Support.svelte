@@ -28,14 +28,12 @@
             </h2> -->
             <p
               class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl"
-            >
-              We’re here to help
+            > We’re here to help
             </p>
             <p class="mt-3 text-lg text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              egestas tempus tellus etiam sed. Quam a scelerisque amet
-              ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-              quisque ut interdum tincidunt duis.
+              We started this mission with the goal to empower people to use powerful systems that will take their business into the current century. We build business systems online from start to finish.
+              Our main focus has been in eCommerce and building systems online for different types of service based businesses. We specialize in integrating businesses with modern tech and analytics tools. Worrying about website performance and whether or not your campaign is working is a thing of the past.
+              We help you build an online presence that fits your business and customers needs.
             </p>
             <div class="mt-8">
               <div class="inline-flex rounded-md shadow">
