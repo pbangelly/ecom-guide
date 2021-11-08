@@ -23,7 +23,8 @@
   }
 
   a {
-    color: rgb(195, 192, 0);
+    color: rgba(11, 143, 219, 0.815);
+    /* color: rgb(195, 192, 0); */
     text-decoration: none;
   }
 
@@ -31,9 +32,9 @@
     text-decoration: underline;
   }
 
-  a:visited {
-    color: rgb(255, 255, 255);
-  }
+  /* a:visited {
+    color: rgba(87, 131, 156, 0.815);
+  } */
 
   label {
     display: block;

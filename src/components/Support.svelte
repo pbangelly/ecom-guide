@@ -1,5 +1,6 @@
 <script>
-  import Sunset from '../../assets/sunset.png';
+  // import Sunset from '../../assets/sunset.png';
+  import Person from '../../assets/images/person.jpg';
 </script>
 
 <div class="relative bg-black text-white">
@@ -8,7 +9,7 @@
         >
           <img
             class="w-full h-full object-fill"
-            src={Sunset}
+            src={Person}
             alt="cloud native entrepreneur logo"
           />
           <div
@@ -39,9 +40,9 @@
               <div class="inline-flex rounded-md shadow">
                 <a
                   href="#"
-                  class="bg-teal-600 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-500"
+                  class="bg-teal-600 inline-flex items-center justify-center px-5 py-3 border border-transparent font-base rounded-md text-white bg-white hover:bg-white hover:text-black visited:text-red-500"
                 >
-                  View Services
+                  Reach Out
                   <!-- Heroicon name: solid/external-link -->
                   <svg
                     class="-mr-1 ml-3 h-5 w-5 text-gray-200"
