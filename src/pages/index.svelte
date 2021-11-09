@@ -33,7 +33,9 @@
 
     <!-- CTA Section - contact support-->
     <Support />
-    
+    <div class="fb-customerchat"
+          page_id="108844254686925">
+          </div>
     </main>
     
     <Footer />
