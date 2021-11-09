@@ -38,10 +38,10 @@
   Hack The Ratio's is a Business Development Service Agency. We build progressive web apps and website for service providers.
   We offer a tailored selection of professional services that are completely customizable for your business.
 </p>
-<form method="get" action="/contact">
+<form method="get" action="https://www.facebook.com/messages/t/108844254686925">
   <button
   class="block w-auto mt-10 py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-400 to-teal-800 text-white font-medium hover:from-teal-500 hover:to-teal-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-teal-100"
-  type="submit">Learn More</button>
+  type="submit">Reach Out</button>
 </form>
 
 <!-- <div class="mt-10 sm:mt-12">

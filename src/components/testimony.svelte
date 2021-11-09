@@ -1,5 +1,5 @@
 <script>
-    import Author from "../../assets/images/logo.png";
+    import Author from "../../assets/images/me.jpg";
 </script>
 
 <div

@@ -96,7 +96,7 @@
 
                             
             <div class="grid grid-cols-2 gap-5 text-white block text-center inline-flex items-center justify-center">
-                <div class="bg-black block text-center inline-flex items-center justify-center"><a href="/">Get Started Now</a></div>
+                <div class="bg-black block text-center inline-flex items-center justify-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqSQ0aNeJ5-vkTyffDlip1aOe6w9x-YuxmL9FZO04rxBL07w/viewform?usp=sf_link">Get Started Now</a></div>
                 <div class="bg-black block text-center inline-flex items-center justify-center"><a href="/">Return Home</a></div>
             </div>
             <!-- <p class="text-base leading-7">
